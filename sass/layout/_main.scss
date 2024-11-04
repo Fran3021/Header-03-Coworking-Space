@@ -1,0 +1,136 @@
+.main-principal{
+    .container-main-principal{
+        position: relative;
+        .image-hero{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 60%;
+        }
+        .hero{
+            display: flex;
+            justify-content: flex-end;
+            .hero-title{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                gap: 33px;
+                padding: 20px 15px 45px 30px;
+                margin-top: 40px;
+                backdrop-filter: blur(8px);
+                background-color: rgba(255, 255, 255, 0.4);
+                @include breakpoint(desktopxxl){
+                    margin-top: 80px;
+                    padding: 30px 25px 55px 40px;
+                }
+                h1{
+                    font-size: 40px;
+                    line-height: 50px;
+                    font-family: $playfair;
+                    width: 90%;
+                    @include breakpoint(desktopxxl){
+                        font-size: 56px;
+                        line-height: 72px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    color: $silver;
+                    @include breakpoint(desktopxxl){
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .hero-check-list{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 100px;
+            @include breakpoint(desktopxxl){
+                margin-bottom: 180px;
+            }
+            .check-list{
+                display: flex;
+                gap: 30px;
+                margin-right: 20px;
+                @include breakpoint(desktopxxl){
+                    margin-right: 100px;
+                    gap: 50px;
+                }
+                .left-list{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        @include breakpoint(desktopxxl){
+                            gap: 25px;
+                        }
+                        li{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            font-size: 15px;
+                            color: $black;
+                            @include breakpoint(desktopxxl){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .right-list{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        @include breakpoint(desktopxxl){
+                            gap: 25px;
+                        }
+                        li{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            font-size: 15px;
+                            color: $black;
+                            @include breakpoint(desktopxxl){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hero-articles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            article{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                img{
+                    width: 10%;
+                    @include breakpoint(desktopxxl){
+                        width: 20%;
+                    }
+                }
+                h3{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $black;
+                    @include breakpoint(desktopxxl){
+                        font-size: 24px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    color: $silver;
+                    width: 60%;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

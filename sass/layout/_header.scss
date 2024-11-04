@@ -1,0 +1,62 @@
+.header-principal{
+    padding-top: 30px;
+    margin-bottom: 40px;
+    @include breakpoint(desktopxxl){
+        margin-bottom: 60px;
+    }
+    .container-header-principal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu-header-principal{
+            ul{
+                display: flex;
+                gap: 36px;
+                align-items: center;
+                @include breakpoint(desktopxxl){
+                    gap: 56px;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: $black;
+                    &:hover{
+                        color: $brown;
+                    }
+                    @include breakpoint(desktopxxl){
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+        .login-header-principal{
+            ul{
+                display: flex;
+                gap: 22px;
+                align-items: center;
+                @include breakpoint(desktopxxl){
+                    gap: 32px;
+                }
+                .search{
+                    margin-right: 0px;
+                    @include breakpoint(desktopxxl){
+                        margin-right: 43px;
+                    }
+                }
+                .sign-in{
+                    color: $brown;
+                    font-size: 15px;
+                    @include breakpoint(desktopxxl){
+                        font-size: 21px;
+                    }
+                }
+                .button-brown{
+                    @include button-brown;
+                    @include breakpoint(desktopxxl){
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
